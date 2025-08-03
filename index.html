@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Academic Hero Companion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN (for demo purposes only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gradient-to-b from-amber-50 to-rose-100 min-h-screen p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">🚀 Academic Hero Companion</h1>
+
+   <div class="flex justify-center mb-4 space-x-4">
+      <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+      <button class="tab-btn" data-tab="schedule">Schedule</button>
+      <button class="tab-btn" data-tab="mentors">Mentors</button>
+    </div>
+
+   <div id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+   <div class="mt-8 text-center">
+      <h3 class="text-lg font-medium mb-2">Overall Progress</h3>
+      <div class="w-full max-w-xl mx-auto bg-gray-300 rounded-full h-4">
+        <div class="bg-blue-500 h-4 rounded-full" style="width: 65%"></div>
+      </div>
+    </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
